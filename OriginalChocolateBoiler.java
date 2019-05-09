@@ -1,21 +1,10 @@
-public class ChocolateBoiler {
+public class OriginalChocolateBoiler {
     private boolean empty;
     private boolean boiled;
-    private static ChocolateBoiler instance;
 
-    private ChocolateBoiler() {
+    public OriginalChocolateBoiler() {
         empty = true;
         boiled = false;
-    }
-
-    public static ChocolateBoiler getInstance() {
-        if(instance == null) {
-            instance = new ChocolateBoiler();
-            System.out.println("ChocolateBoiler se creo");
-        } else {
-            System.out.println("No se creo ");
-        }
-        return instance;
     }
 
     public void fill(){
